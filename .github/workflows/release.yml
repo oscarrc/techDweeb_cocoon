@@ -36,10 +36,10 @@ jobs:
           # Inject the version into the script if needed
           THEME_VERSION: ${{ needs.release-please.outputs.tag_name }}
         run: |
-          chmod +x ./convert_techdweeb.sh
+          chmod +x ./generate.sh
           COLORS=("orange" "purple" "cyan" "green" "pink" "blue" "red" "grey" "dmg" "black")
           for color in "${COLORS[@]}"; do
-            ./convert_techdweeb.sh "$color"
+            ./generate.sh "$color"
           done
 
       - name: Upload Release
