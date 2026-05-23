@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/oscarrc/techDweeb_cocoon/compare/v1.1.1...v1.1.2) (2026-05-23)
+
+
+### Bug Fixes
+
+* detect magick command to prevent version errors ([cffdb33](https://github.com/oscarrc/techDweeb_cocoon/commit/cffdb33779f058230b4368ae2acd0d99db6987e8))
+
 ## [1.1.1](https://github.com/oscarrc/techDweeb_cocoon/compare/v1.1.0...v1.1.1) (2026-05-23)
 
 
