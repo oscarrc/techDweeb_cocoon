@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/oscarrc/techDweeb_cocoon/compare/v1.1.0...v1.1.1) (2026-05-23)
+
+
+### Bug Fixes
+
+* filename mismatch on gh action ([340971a](https://github.com/oscarrc/techDweeb_cocoon/commit/340971a42a9921583a41caedfe90750a5d79ba3c))
+
 ## [1.1.0](https://github.com/oscarrc/techDweeb_cocoon/compare/v1.0.0...v1.1.0) (2026-05-23)
 
 
