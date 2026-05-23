@@ -12,6 +12,8 @@ SYSTEMS_MAPPING_FILE="systems_mapping.csv"
 SOUNDS_MAPPING_FILE="sounds_mapping.csv"
 TOP_LEVEL_SYSTEMS=("favorites" "recent" "unplayed" "most_played" "newly_added")
 
+IM_CMD=$(command -v magick || command -v convert)
+
 # Map colors
 case $COLOR_ARG in
     orange) PRIMARY_HEX="#9e4700"; DARK_HEX="#482100"; BG_HEX="#0a0a0a"; SURFACE_HEX="#171717"; SELECTOR_HEX="#4d4b4b" ;;
@@ -62,7 +64,7 @@ while IFS=, read -r es_id cocoon_id; do
     
     if [ -n "$es_id" ] && [ -f "$TMP_DIR/_inc/systems/logos/${es_id}.png" ]; then
         cp "$TMP_DIR/_inc/systems/logos/${es_id}.png" "$TARGET_DIR/logo.png"
-        magick "$TMP_DIR/_inc/systems/logos/${es_id}.png" -trim -resize 450x450\> -background none -gravity center -extent 512x512 "$TARGET_DIR/icon.png"
+        $IM_CMD "$TMP_DIR/_inc/systems/logos/${es_id}.png" -trim -resize 450x450\> -background none -gravity center -extent 512x512 "$TARGET_DIR/icon.png"
     fi
 done < "$SYSTEMS_MAPPING_FILE"
 
