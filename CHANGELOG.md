@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/oscarrc/techDweeb_cocoon/compare/v1.1.2...v1.1.3) (2026-05-24)
+
+
+### Bug Fixes
+
+* declare all theme colors ([8b3aa63](https://github.com/oscarrc/techDweeb_cocoon/commit/8b3aa6303ef07148412bfccd14163dcdf0cb90da))
+
 ## [1.1.2](https://github.com/oscarrc/techDweeb_cocoon/compare/v1.1.1...v1.1.2) (2026-05-23)
 
 
