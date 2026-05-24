@@ -191,10 +191,6 @@
     "cocoon": "",
     "esde": "crvision"
   },
-  "custom-collections": {
-    "cocoon": "",
-    "esde": "custom-collections"
-  },
   "daphne": {
     "cocoon": "",
     "esde": "daphne"
@@ -351,10 +347,6 @@
     "cocoon": "",
     "esde": "gx4000"
   },
-  "imageviewer": {
-    "cocoon": "",
-    "esde": "imageviewer"
-  },
   "intellivision": {
     "cocoon": "intellivision",
     "esde": "intellivision"
@@ -362,10 +354,6 @@
   "j2me": {
     "cocoon": "j2me",
     "esde": "j2me"
-  },
-  "kodi": {
-    "cocoon": "",
-    "esde": "kodi"
   },
   "laserdisc": {
     "cocoon": "",
@@ -802,10 +790,6 @@
   "to8": {
     "cocoon": "to8",
     "esde": "to8"
-  },
-  "tools": {
-    "cocoon": "",
-    "esde": "tools"
   },
   "triforce": {
     "cocoon": "",
