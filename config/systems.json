@@ -1,0 +1,962 @@
+{
+  "3do": {
+    "cocoon": "3do",
+    "esde": "3do"
+  },
+  "_pc": {
+    "cocoon": "",
+    "esde": "_pc"
+  },
+  "adam": {
+    "cocoon": "",
+    "esde": "adam"
+  },
+  "ags": {
+    "cocoon": "",
+    "esde": "ags"
+  },
+  "amiga": {
+    "cocoon": "amiga",
+    "esde": "amiga"
+  },
+  "amiga1200": {
+    "cocoon": "",
+    "esde": "amiga1200"
+  },
+  "amiga600": {
+    "cocoon": "",
+    "esde": "amiga600"
+  },
+  "amigacd32": {
+    "cocoon": "",
+    "esde": "amigacd32"
+  },
+  "amstradcpc": {
+    "cocoon": "amstradcpc",
+    "esde": "amstradcpc"
+  },
+  "android": {
+    "cocoon": "android",
+    "esde": "android"
+  },
+  "androidapps": {
+    "cocoon": "",
+    "esde": "androidapps"
+  },
+  "androidgames": {
+    "cocoon": "",
+    "esde": "androidgames"
+  },
+  "apple2": {
+    "cocoon": "apple2",
+    "esde": "apple2"
+  },
+  "apple2gs": {
+    "cocoon": "",
+    "esde": "apple2gs"
+  },
+  "arcade": {
+    "cocoon": "",
+    "esde": "arcade"
+  },
+  "arcadia": {
+    "cocoon": "arcadia",
+    "esde": "arcadia"
+  },
+  "archimedes": {
+    "cocoon": "",
+    "esde": "archimedes"
+  },
+  "arduboy": {
+    "cocoon": "arduboy",
+    "esde": "arduboy"
+  },
+  "astrocade": {
+    "cocoon": "",
+    "esde": "astrocade"
+  },
+  "atari2600": {
+    "cocoon": "atari2600",
+    "esde": "atari2600"
+  },
+  "atari5200": {
+    "cocoon": "atari5200",
+    "esde": "atari5200"
+  },
+  "atari7800": {
+    "cocoon": "atari7800",
+    "esde": "atari7800"
+  },
+  "atari800": {
+    "cocoon": "",
+    "esde": "atari800"
+  },
+  "atarijaguar": {
+    "cocoon": "atarijaguar",
+    "esde": "atarijaguar"
+  },
+  "atarijaguarcd": {
+    "cocoon": "atarijaguarcd",
+    "esde": "atarijaguarcd"
+  },
+  "atarilynx": {
+    "cocoon": "atarilynx",
+    "esde": "atarilynx"
+  },
+  "atarist": {
+    "cocoon": "atarist",
+    "esde": "atarist"
+  },
+  "atarixe": {
+    "cocoon": "",
+    "esde": "atarixe"
+  },
+  "atomiswave": {
+    "cocoon": "atomiswave",
+    "esde": "atomiswave"
+  },
+  "auto-allgames": {
+    "cocoon": "",
+    "esde": "auto-allgames"
+  },
+  "auto-at2players": {
+    "cocoon": "",
+    "esde": "auto-at2players"
+  },
+  "auto-at4players": {
+    "cocoon": "",
+    "esde": "auto-at4players"
+  },
+  "auto-verticalarcade": {
+    "cocoon": "",
+    "esde": "auto-verticalarcade"
+  },
+  "bbcmicro": {
+    "cocoon": "bbcmicro",
+    "esde": "bbcmicro"
+  },
+  "c64": {
+    "cocoon": "c64",
+    "esde": "c64"
+  },
+  "cannonball": {
+    "cocoon": "cannonball",
+    "esde": ""
+  },
+  "cassette": {
+    "cocoon": "cassette",
+    "esde": ""
+  },
+  "cavestory": {
+    "cocoon": "cavestory",
+    "esde": ""
+  },
+  "cdimono1": {
+    "cocoon": "cdimono1",
+    "esde": "cdimono1"
+  },
+  "cdtv": {
+    "cocoon": "",
+    "esde": "cdtv"
+  },
+  "chailove": {
+    "cocoon": "",
+    "esde": "chailove"
+  },
+  "channelf": {
+    "cocoon": "channelf",
+    "esde": "channelf"
+  },
+  "chip8": {
+    "cocoon": "chip8",
+    "esde": ""
+  },
+  "coco": {
+    "cocoon": "",
+    "esde": "coco"
+  },
+  "colecovision": {
+    "cocoon": "colecovision",
+    "esde": "colecovision"
+  },
+  "completed": {
+    "cocoon": "",
+    "esde": "completed"
+  },
+  "consolearcade": {
+    "cocoon": "",
+    "esde": "consolearcade"
+  },
+  "cps": {
+    "cocoon": "",
+    "esde": "cps"
+  },
+  "cps1": {
+    "cocoon": "cps1",
+    "esde": "cps1"
+  },
+  "cps2": {
+    "cocoon": "cps2",
+    "esde": "cps2"
+  },
+  "cps3": {
+    "cocoon": "cps3",
+    "esde": "cps3"
+  },
+  "crvision": {
+    "cocoon": "",
+    "esde": "crvision"
+  },
+  "custom-collections": {
+    "cocoon": "",
+    "esde": "custom-collections"
+  },
+  "daphne": {
+    "cocoon": "",
+    "esde": "daphne"
+  },
+  "desktop": {
+    "cocoon": "",
+    "esde": "desktop"
+  },
+  "doom": {
+    "cocoon": "doom",
+    "esde": "doom"
+  },
+  "dos": {
+    "cocoon": "dos",
+    "esde": "msdos"
+  },
+  "dragon32": {
+    "cocoon": "",
+    "esde": "dragon32"
+  },
+  "dreamcast": {
+    "cocoon": "dreamcast",
+    "esde": "dreamcast"
+  },
+  "easyrpg": {
+    "cocoon": "",
+    "esde": "easyrpg"
+  },
+  "ebook": {
+    "cocoon": "ebook",
+    "esde": ""
+  },
+  "electron": {
+    "cocoon": "",
+    "esde": "electron"
+  },
+  "elektor": {
+    "cocoon": "elektor",
+    "esde": ""
+  },
+  "emulators": {
+    "cocoon": "",
+    "esde": "emulators"
+  },
+  "epic": {
+    "cocoon": "",
+    "esde": "epic"
+  },
+  "famicom": {
+    "cocoon": "",
+    "esde": "famicom"
+  },
+  "favorites": {
+    "cocoon": "favorites",
+    "esde": "auto-favorites"
+  },
+  "fba": {
+    "cocoon": "",
+    "esde": "fba"
+  },
+  "fbn": {
+    "cocoon": "",
+    "esde": "fbn"
+  },
+  "fbneo": {
+    "cocoon": "fbneo",
+    "esde": "fbneo"
+  },
+  "fds": {
+    "cocoon": "fds",
+    "esde": "fds"
+  },
+  "flash": {
+    "cocoon": "",
+    "esde": "flash"
+  },
+  "flashback": {
+    "cocoon": "flashback",
+    "esde": ""
+  },
+  "fm7": {
+    "cocoon": "",
+    "esde": "fm7"
+  },
+  "fmtowns": {
+    "cocoon": "fmtowns",
+    "esde": "fmtowns"
+  },
+  "fpinball": {
+    "cocoon": "",
+    "esde": "fpinball"
+  },
+  "gamate": {
+    "cocoon": "",
+    "esde": "gamate"
+  },
+  "gameandwatch": {
+    "cocoon": "gameandwatch",
+    "esde": "gameandwatch"
+  },
+  "gamecom": {
+    "cocoon": "",
+    "esde": "gamecom"
+  },
+  "gamegear": {
+    "cocoon": "gamegear",
+    "esde": "gamegear"
+  },
+  "gb": {
+    "cocoon": "gb",
+    "esde": "gb"
+  },
+  "gba": {
+    "cocoon": "gba",
+    "esde": "gba"
+  },
+  "gbah": {
+    "cocoon": "",
+    "esde": "gbah"
+  },
+  "gbc": {
+    "cocoon": "gbc",
+    "esde": "gbc"
+  },
+  "gbch": {
+    "cocoon": "",
+    "esde": "gbch"
+  },
+  "gbh": {
+    "cocoon": "",
+    "esde": "gbh"
+  },
+  "gc": {
+    "cocoon": "gc",
+    "esde": "gc"
+  },
+  "genesis": {
+    "cocoon": "genesis",
+    "esde": "megadrive"
+  },
+  "genesismsu": {
+    "cocoon": "genesismsu",
+    "esde": "msu-md"
+  },
+  "genh": {
+    "cocoon": "",
+    "esde": "genh"
+  },
+  "gmaster": {
+    "cocoon": "",
+    "esde": "gmaster"
+  },
+  "gx4000": {
+    "cocoon": "",
+    "esde": "gx4000"
+  },
+  "imageviewer": {
+    "cocoon": "",
+    "esde": "imageviewer"
+  },
+  "intellivision": {
+    "cocoon": "intellivision",
+    "esde": "intellivision"
+  },
+  "j2me": {
+    "cocoon": "j2me",
+    "esde": "j2me"
+  },
+  "kodi": {
+    "cocoon": "",
+    "esde": "kodi"
+  },
+  "laserdisc": {
+    "cocoon": "",
+    "esde": "laserdisc"
+  },
+  "lcdgames": {
+    "cocoon": "",
+    "esde": "lcdgames"
+  },
+  "lowresnx": {
+    "cocoon": "lowresnx",
+    "esde": "lowresnx"
+  },
+  "lutris": {
+    "cocoon": "",
+    "esde": "lutris"
+  },
+  "lutro": {
+    "cocoon": "",
+    "esde": "lutro"
+  },
+  "macintosh": {
+    "cocoon": "",
+    "esde": "macintosh"
+  },
+  "mame": {
+    "cocoon": "mame",
+    "esde": "mame"
+  },
+  "mame-advmame": {
+    "cocoon": "",
+    "esde": "mame-advmame"
+  },
+  "mark3": {
+    "cocoon": "",
+    "esde": "mark3"
+  },
+  "mastersystem": {
+    "cocoon": "mastersystem",
+    "esde": "mastersystem"
+  },
+  "megacdjp": {
+    "cocoon": "",
+    "esde": "megacdjp"
+  },
+  "megadrivejp": {
+    "cocoon": "",
+    "esde": "megadrivejp"
+  },
+  "megaduck": {
+    "cocoon": "megaduck",
+    "esde": "megaduck"
+  },
+  "mess": {
+    "cocoon": "",
+    "esde": "mess"
+  },
+  "model2": {
+    "cocoon": "",
+    "esde": "model2"
+  },
+  "model3": {
+    "cocoon": "",
+    "esde": "model3"
+  },
+  "moonlight": {
+    "cocoon": "moonlight",
+    "esde": ""
+  },
+  "most_played": {
+    "cocoon": "most_played",
+    "esde": ""
+  },
+  "moto": {
+    "cocoon": "",
+    "esde": "moto"
+  },
+  "msx": {
+    "cocoon": "msx",
+    "esde": "msx"
+  },
+  "msx1": {
+    "cocoon": "",
+    "esde": "msx1"
+  },
+  "msx2": {
+    "cocoon": "",
+    "esde": "msx2"
+  },
+  "msxturbor": {
+    "cocoon": "",
+    "esde": "msxturbor"
+  },
+  "mugen": {
+    "cocoon": "",
+    "esde": "mugen"
+  },
+  "multivision": {
+    "cocoon": "",
+    "esde": "multivision"
+  },
+  "n3ds": {
+    "cocoon": "n3ds",
+    "esde": "n3ds"
+  },
+  "n64": {
+    "cocoon": "n64",
+    "esde": "n64"
+  },
+  "n64dd": {
+    "cocoon": "",
+    "esde": "n64dd"
+  },
+  "naomi": {
+    "cocoon": "naomi",
+    "esde": "naomi"
+  },
+  "naomi2": {
+    "cocoon": "",
+    "esde": "naomi2"
+  },
+  "naomigd": {
+    "cocoon": "",
+    "esde": "naomigd"
+  },
+  "nds": {
+    "cocoon": "nds",
+    "esde": "nds"
+  },
+  "ndsi": {
+    "cocoon": "ndsi",
+    "esde": ""
+  },
+  "neogeo": {
+    "cocoon": "neogeo",
+    "esde": "neogeo"
+  },
+  "neogeocd": {
+    "cocoon": "neogeocd",
+    "esde": "neogeocd"
+  },
+  "neogeocdjp": {
+    "cocoon": "",
+    "esde": "neogeocdjp"
+  },
+  "nes": {
+    "cocoon": "nes",
+    "esde": "nes"
+  },
+  "nesh": {
+    "cocoon": "",
+    "esde": "nesh"
+  },
+  "newly_added": {
+    "cocoon": "newly_added",
+    "esde": ""
+  },
+  "ngage": {
+    "cocoon": "ngage",
+    "esde": "ngage"
+  },
+  "ngp": {
+    "cocoon": "ngp",
+    "esde": "ngp"
+  },
+  "ngpc": {
+    "cocoon": "ngpc",
+    "esde": "ngpc"
+  },
+  "now-playing": {
+    "cocoon": "",
+    "esde": "now-playing"
+  },
+  "odyssey2": {
+    "cocoon": "odyssey2",
+    "esde": "odyssey2"
+  },
+  "openbor": {
+    "cocoon": "",
+    "esde": "openbor"
+  },
+  "oric": {
+    "cocoon": "oric",
+    "esde": "oric"
+  },
+  "palm": {
+    "cocoon": "palm",
+    "esde": "palm"
+  },
+  "pc": {
+    "cocoon": "",
+    "esde": "pc"
+  },
+  "pc60": {
+    "cocoon": "pc60",
+    "esde": ""
+  },
+  "pc88": {
+    "cocoon": "pc88",
+    "esde": "pc88"
+  },
+  "pc98": {
+    "cocoon": "pc98",
+    "esde": "pc98"
+  },
+  "pcarcade": {
+    "cocoon": "",
+    "esde": "pcarcade"
+  },
+  "pcfx": {
+    "cocoon": "pcfx",
+    "esde": "pcfx"
+  },
+  "pet": {
+    "cocoon": "pet",
+    "esde": ""
+  },
+  "pico": {
+    "cocoon": "pico",
+    "esde": ""
+  },
+  "pico8": {
+    "cocoon": "pico8",
+    "esde": "pico8"
+  },
+  "playdate": {
+    "cocoon": "",
+    "esde": "playdate"
+  },
+  "plus4": {
+    "cocoon": "plus4",
+    "esde": "plus4"
+  },
+  "pokemini": {
+    "cocoon": "pokemini",
+    "esde": "pokemini"
+  },
+  "ports": {
+    "cocoon": "",
+    "esde": "ports"
+  },
+  "ps2": {
+    "cocoon": "ps2",
+    "esde": "ps2"
+  },
+  "ps3": {
+    "cocoon": "ps3",
+    "esde": "ps3"
+  },
+  "ps4": {
+    "cocoon": "",
+    "esde": "ps4"
+  },
+  "psp": {
+    "cocoon": "psp",
+    "esde": "psp"
+  },
+  "pspminis": {
+    "cocoon": "pspminis",
+    "esde": ""
+  },
+  "psvita": {
+    "cocoon": "psvita",
+    "esde": "psvita"
+  },
+  "psx": {
+    "cocoon": "psx",
+    "esde": "psx"
+  },
+  "pv1000": {
+    "cocoon": "",
+    "esde": "pv1000"
+  },
+  "pygame": {
+    "cocoon": "",
+    "esde": "pygame"
+  },
+  "quake": {
+    "cocoon": "quake",
+    "esde": "quake"
+  },
+  "quake2": {
+    "cocoon": "quake2",
+    "esde": ""
+  },
+  "recent": {
+    "cocoon": "recent",
+    "esde": "auto-lastplayed"
+  },
+  "rpgmaker": {
+    "cocoon": "rpgmaker",
+    "esde": ""
+  },
+  "samcoupe": {
+    "cocoon": "",
+    "esde": "samcoupe"
+  },
+  "satellaview": {
+    "cocoon": "satellaview",
+    "esde": "satellaview"
+  },
+  "saturn": {
+    "cocoon": "saturn",
+    "esde": "saturn"
+  },
+  "saturnjp": {
+    "cocoon": "",
+    "esde": "saturnjp"
+  },
+  "screenshots": {
+    "cocoon": "",
+    "esde": "screenshots"
+  },
+  "scummvm": {
+    "cocoon": "scummvm",
+    "esde": "scummvm"
+  },
+  "sega32x": {
+    "cocoon": "sega32x",
+    "esde": "sega32x"
+  },
+  "sega32xjp": {
+    "cocoon": "",
+    "esde": "sega32xjp"
+  },
+  "sega32xna": {
+    "cocoon": "",
+    "esde": "sega32xna"
+  },
+  "segacd": {
+    "cocoon": "segacd",
+    "esde": "segacd"
+  },
+  "setup": {
+    "cocoon": "",
+    "esde": "setup"
+  },
+  "sg-1000": {
+    "cocoon": "sg-1000",
+    "esde": "sg-1000"
+  },
+  "sgb": {
+    "cocoon": "",
+    "esde": "sgb"
+  },
+  "smd": {
+    "cocoon": "",
+    "esde": "smd"
+  },
+  "snes": {
+    "cocoon": "snes",
+    "esde": "snes"
+  },
+  "snesh": {
+    "cocoon": "",
+    "esde": "snesh"
+  },
+  "snesmsu1": {
+    "cocoon": "snesmsu1",
+    "esde": "snes-msu1"
+  },
+  "snesna": {
+    "cocoon": "",
+    "esde": "snesna"
+  },
+  "solarus": {
+    "cocoon": "",
+    "esde": "solarus"
+  },
+  "spectravideo": {
+    "cocoon": "",
+    "esde": "spectravideo"
+  },
+  "steam": {
+    "cocoon": "steam",
+    "esde": "steam"
+  },
+  "stv": {
+    "cocoon": "",
+    "esde": "stv"
+  },
+  "sufami": {
+    "cocoon": "",
+    "esde": "sufami"
+  },
+  "supercassette": {
+    "cocoon": "supercassette",
+    "esde": "scv"
+  },
+  "supergrafx": {
+    "cocoon": "supergrafx",
+    "esde": "supergrafx"
+  },
+  "supervision": {
+    "cocoon": "supervision",
+    "esde": "supervision"
+  },
+  "supracan": {
+    "cocoon": "",
+    "esde": "supracan"
+  },
+  "switch": {
+    "cocoon": "switch",
+    "esde": "switch"
+  },
+  "symbian": {
+    "cocoon": "",
+    "esde": "symbian"
+  },
+  "tanodragon": {
+    "cocoon": "",
+    "esde": "tanodragon"
+  },
+  "tg-cd": {
+    "cocoon": "tg-cd",
+    "esde": "tg16cd"
+  },
+  "tg16": {
+    "cocoon": "tg16",
+    "esde": "pcengine"
+  },
+  "ti83": {
+    "cocoon": "ti83",
+    "esde": ""
+  },
+  "ti99": {
+    "cocoon": "",
+    "esde": "ti99"
+  },
+  "tic80": {
+    "cocoon": "tic80",
+    "esde": "tic80"
+  },
+  "to8": {
+    "cocoon": "to8",
+    "esde": "to8"
+  },
+  "tools": {
+    "cocoon": "",
+    "esde": "tools"
+  },
+  "triforce": {
+    "cocoon": "",
+    "esde": "triforce"
+  },
+  "trs-80": {
+    "cocoon": "",
+    "esde": "trs-80"
+  },
+  "type-x": {
+    "cocoon": "",
+    "esde": "type-x"
+  },
+  "unplayed": {
+    "cocoon": "unplayed",
+    "esde": "auto-neverplayed"
+  },
+  "uzebox": {
+    "cocoon": "uzebox",
+    "esde": "uzebox"
+  },
+  "vc4000": {
+    "cocoon": "vc4000",
+    "esde": ""
+  },
+  "vectrex": {
+    "cocoon": "vectrex",
+    "esde": "vectrex"
+  },
+  "vic20": {
+    "cocoon": "vic20",
+    "esde": "vic20"
+  },
+  "videopac": {
+    "cocoon": "videopac",
+    "esde": "videopac"
+  },
+  "videos": {
+    "cocoon": "videos",
+    "esde": ""
+  },
+  "vircon32": {
+    "cocoon": "",
+    "esde": "vircon32"
+  },
+  "virtualboy": {
+    "cocoon": "virtualboy",
+    "esde": "virtualboy"
+  },
+  "vpinball": {
+    "cocoon": "",
+    "esde": "vpinball"
+  },
+  "vsmile": {
+    "cocoon": "",
+    "esde": "vsmile"
+  },
+  "wasm4": {
+    "cocoon": "wasm4",
+    "esde": "wasm4"
+  },
+  "wii": {
+    "cocoon": "wii",
+    "esde": "wii"
+  },
+  "wiiu": {
+    "cocoon": "wiiu",
+    "esde": "wiiu"
+  },
+  "wiiware": {
+    "cocoon": "wiiware",
+    "esde": ""
+  },
+  "windows": {
+    "cocoon": "windows",
+    "esde": "windows"
+  },
+  "windows3x": {
+    "cocoon": "",
+    "esde": "windows3x"
+  },
+  "windows9x": {
+    "cocoon": "",
+    "esde": "windows9x"
+  },
+  "wonderswan": {
+    "cocoon": "wonderswan",
+    "esde": "wonderswan"
+  },
+  "wonderswancolor": {
+    "cocoon": "wonderswancolor",
+    "esde": "wonderswancolor"
+  },
+  "x1": {
+    "cocoon": "x1",
+    "esde": "x1"
+  },
+  "x68000": {
+    "cocoon": "x68000",
+    "esde": "x68000"
+  },
+  "xbox": {
+    "cocoon": "xbox",
+    "esde": "xbox"
+  },
+  "xbox360": {
+    "cocoon": "",
+    "esde": "xbox360"
+  },
+  "xboxone": {
+    "cocoon": "",
+    "esde": "xboxone"
+  },
+  "xcloud": {
+    "cocoon": "xcloud",
+    "esde": ""
+  },
+  "zeebo": {
+    "cocoon": "zeebo",
+    "esde": ""
+  },
+  "zmachine": {
+    "cocoon": "",
+    "esde": "zmachine"
+  },
+  "zx81": {
+    "cocoon": "zx81",
+    "esde": "zx81"
+  },
+  "zxnext": {
+    "cocoon": "",
+    "esde": "zxnext"
+  },
+  "zxspectrum": {
+    "cocoon": "zxspectrum",
+    "esde": "zxspectrum"
+  }
+}

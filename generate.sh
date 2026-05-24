@@ -1,5 +1,4 @@
 #!/bin/bash
-# run in GH Actions: ./generate.sh
 
 command -v jq >/dev/null 2>&1 || { echo >&2 "Error: 'jq' is required."; exit 1; }
 command -v 7z >/dev/null 2>&1 || { echo >&2 "Error: '7z' (p7zip-full) is required."; exit 1; }
@@ -67,8 +66,8 @@ for color in $(jq -r 'keys[]' "$COLORS_FILE"); do
     "icon_scale": 0.9,
     "hover_scale": 1
   },
-  "wallpaper_main": "wallpapers/${color}.png",
-  "wallpaper_external": "wallpapers/black.png"
+  "wallpaper_main": "${color}.png",
+  "wallpaper_external": "black.png"
 }
 EOF
 
