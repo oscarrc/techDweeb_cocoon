@@ -1,0 +1,3 @@
+[submodule "CocoonFE"]
+	path = CocoonFE
+	url = https://github.com/inssekt/CocoonFE
