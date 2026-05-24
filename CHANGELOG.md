@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/oscarrc/techDweeb_cocoon/compare/v1.1.3...v1.1.4) (2026-05-24)
+
+
+### Bug Fixes
+
+* remove esde specific icon utils ([8abacae](https://github.com/oscarrc/techDweeb_cocoon/commit/8abacaeb5caa1df46138095450ee70b4152340c6))
+
 ## [1.1.3](https://github.com/oscarrc/techDweeb_cocoon/compare/v1.1.2...v1.1.3) (2026-05-24)
 
 
