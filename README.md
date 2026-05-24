@@ -34,7 +34,7 @@ Ensure you have the following installed on your system:
 ---
 
 ## Important Note
-This is not an official repository and is not affiliated with [@TechDweeb](https://github.com/TechDweeb) or [@anthonycaccese](https://github.com/anthonycaccese/). This repository serves strictly as a utility to automate the creation and packaging of color variants for the TechDweeb theme.
+This is not an official repository and is not affiliated with [@TechDweeb](https://github.com/TechDweeb) or [@anthonycaccese](https://github.com/anthonycaccese/). This repository serves strictly as a utility to automate the creation and packaging of color variants for the TechDweeb theme adapted to Cocoon.
 
 ## Credits
 All credit for the original design, assets, and conceptual work goes to the original author of **TechDweeb**. This project aims to support and distribute their work more efficiently through automation.
