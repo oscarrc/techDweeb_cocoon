@@ -115,22 +115,6 @@
     "cocoon": "atomiswave",
     "esde": "atomiswave"
   },
-  "auto-allgames": {
-    "cocoon": "",
-    "esde": "auto-allgames"
-  },
-  "auto-at2players": {
-    "cocoon": "",
-    "esde": "auto-at2players"
-  },
-  "auto-at4players": {
-    "cocoon": "",
-    "esde": "auto-at4players"
-  },
-  "auto-verticalarcade": {
-    "cocoon": "",
-    "esde": "auto-verticalarcade"
-  },
   "bbcmicro": {
     "cocoon": "bbcmicro",
     "esde": "bbcmicro"

@@ -1,139 +1,91 @@
 #!/bin/bash
-CLEAN_MODE=false
-if [[ "$1" == "--clean" ]]; then
-    CLEAN_MODE=true
-fi
 
-command -v jq >/dev/null 2>&1 || { echo >&2 "Error: 'jq' is required."; exit 1; }
-command -v magick >/dev/null 2>&1 || { echo >&2 "Error: 'magick' is required."; exit 1; }
+# --- Configuration & Constants ---
+CLEAN_MODE=false
+[[ "$1" == "--clean" ]] && CLEAN_MODE=true
 
 COCOON_INDEX="CocoonFE/platforms/index.json"
 TECHDWEEB_DIR="techdweeb-es-de"
 SYS_MAPPING="config/systems.json"
+FLDR_MAPPING="config/folders.json"
 SND_MAPPING="config/sounds.json"
 THEME_BASE="theme"
 README_FILE="README.md"
 
-TOP_LEVEL_SYSTEMS=("favorites" "recent" "unplayed" "most_played" "newly_added")
+# --- Functions ---
 
-if [ "$CLEAN_MODE" = true ]; then
-    echo "Cleaning existing theme..."
-    rm -rf "$THEME_BASE"
-fi
-
-echo "Preparing theme directories..."
-mkdir -p "$THEME_BASE/smart_folders"
-mkdir -p "$THEME_BASE/sounds"
-
-echo "Converting logos and icons..."
-for cocoon_id in $(jq -r 'keys[]' "$SYS_MAPPING"); do
-    # Extract es_id and cocoon string
-    es_id=$(jq -r ".\"$cocoon_id\".esde" "$SYS_MAPPING")
-    cocoon_val=$(jq -r ".\"$cocoon_id\".cocoon" "$SYS_MAPPING")
-
-    # Verify the platform exists in CocoonFE index
-    if ! grep -q "\"$cocoon_id\"" "$COCOON_INDEX"; then
-        continue
+# Processes images and generates icons
+process_assets() {
+    local es_id=$1 target_dir=$2 cocoon_id=$3
+    mkdir -p "$target_dir"
+    local src_logo="$TECHDWEEB_DIR/_inc/systems/logos/${es_id}.png"
+    
+    if [ -f "$src_logo" ]; then
+        cp -u "$src_logo" "$target_dir/logo.png"
+        if [ "$CLEAN_MODE" = true ] || [ ! -f "$target_dir/icon.png" ] || [ "$src_logo" -nt "$target_dir/icon.png" ]; then
+            echo "  Generating icon for $cocoon_id..."
+            magick "$src_logo" -trim -resize 450x450\> -background none -gravity center -extent 512x512 "$target_dir/icon.png"
+        fi
     fi
+}
 
-    # Determine Top Level or Standard Platform
-    IS_TOP=false
-    for top in "${TOP_LEVEL_SYSTEMS[@]}"; do
-        if [[ "$cocoon_id" == "$top" ]]; then
-            IS_TOP=true
-            break
+# Generates markdown table rows for a given mapping file
+generate_table_section() {
+    local mapping_file=$1 path_suffix=$2 title=$3
+    echo -e "\n## $title\n"
+    echo "| Item | Icon | Logo | Hero |"
+    echo "|---|:---:|:---:|:---:|"
+    
+    for cocoon_id in $(jq -r 'keys[]' "$mapping_file" | sort); do
+        local target_dir="$THEME_BASE/$path_suffix/$cocoon_id"
+        if [ -d "$target_dir" ]; then
+            local i="❌"; local l="❌"; local h="➖"
+            [ -f "$target_dir/icon.png" ] && i="✅"
+            [ -f "$target_dir/logo.png" ] && l="✅"
+            local display_name=$(echo "$cocoon_id" | awk '{print toupper(substr($0,1,1)) substr($0,2)}')
+            echo "| **$display_name** | $i | $l | $h |"
         fi
     done
+}
 
-    if [ "$IS_TOP" = true ]; then
-        TARGET_DIR="$THEME_BASE/$cocoon_id"
-    else
-        TARGET_DIR="$THEME_BASE/smart_folders/$cocoon_id"
-    fi
+# --- Main Logic ---
 
-    mkdir -p "$TARGET_DIR"
+echo "Preparing theme directories..."
+mkdir -p "$THEME_BASE/smart_folders/by_platform" "$THEME_BASE/sounds"
 
-    SRC_LOGO="$TECHDWEEB_DIR/_inc/systems/logos/${es_id}.png"
-    
-    if [ -f "$SRC_LOGO" ]; then
-        # Copy original logo (only if newer)
-        cp -u "$SRC_LOGO" "$TARGET_DIR/logo.png"
-        
-        # Run magick if: Clean mode is true, icon is missing, or source logo is newer than the icon
-        if [ "$CLEAN_MODE" = true ] || [ ! -f "$TARGET_DIR/icon.png" ] || [ "$SRC_LOGO" -nt "$TARGET_DIR/icon.png" ]; then
-            echo "  Generating icon for $cocoon_id..."
-            magick "$SRC_LOGO" -trim -resize 450x450\> -background none -gravity center -extent 512x512 "$TARGET_DIR/icon.png"
-        fi
-    fi
-  done
+echo "Converting Systems..."
+for id in $(jq -r 'keys[]' "$SYS_MAPPING"); do
+    process_assets "$(jq -r ".\"$id\".esde" "$SYS_MAPPING")" "$THEME_BASE/smart_folders/by_platform/$id" "$id"
+done
+
+echo "Converting Folders..."
+for id in $(jq -r 'keys[]' "$FLDR_MAPPING"); do
+    process_assets "$(jq -r ".\"$id\"" "$FLDR_MAPPING")" "$THEME_BASE/smart_folders/$id" "$id"
+done
 
 echo "Copying sounds..."
-for cocoon_snd in $(jq -r 'keys[]' "$SND_MAPPING"); do
-    esde_snd=$(jq -r ".\"$cocoon_snd\"" "$SND_MAPPING")
-    
-    if [ -z "$esde_snd" ] || [ "$esde_snd" == "null" ]; then
-        continue
-    fi
-    
-    SRC_SND="$TECHDWEEB_DIR/_inc/sounds/${esde_snd}.wav"
-    
-    if [ -f "$SRC_SND" ]; then
-        cp -u "$SRC_SND" "$THEME_BASE/sounds/${cocoon_snd}.wav"
-    else
-        echo "  Warning: Expected sound '$SRC_SND' not found in ES-DE repository."
-    fi
+for snd in $(jq -r 'keys[]' "$SND_MAPPING"); do
+    esde_snd=$(jq -r ".\"$snd\"" "$SND_MAPPING")
+    [[ -z "$esde_snd" || "$esde_snd" == "null" ]] && continue
+    src_snd="$TECHDWEEB_DIR/_inc/sounds/${esde_snd}.wav"
+    [[ -f "$src_snd" ]] && cp -u "$src_snd" "$THEME_BASE/sounds/${snd}.wav" || echo "  Warning: $src_snd not found."
 done
 
-echo "Local asset conversion complete! -> ./$THEME_BASE"
+echo "Copying wallpapers..."
+# Ensure the destination directory exists
+mkdir -p "$THEME_BASE/wallpapers"
 
-
-echo "Updating README.md.."
-
-TABLE_TMP=$(mktemp)
-
-# Build the table header
-echo "| System | Icon | Logo | Hero |" > "$TABLE_TMP"
-echo "|---|:---:|:---:|:---:|" >> "$TABLE_TMP"
-
-# Read keys alphabetically to keep the table sorted
-for cocoon_id in $(jq -r 'keys[]' "$SYS_MAPPING" | sort); do
-    IS_TOP=false
-    for top in "${TOP_LEVEL_SYSTEMS[@]}"; do [[ "$cocoon_id" == "$top" ]] && IS_TOP=true && break; done
-
-    if [ "$IS_TOP" = true ]; then TARGET_DIR="$THEME_BASE/$cocoon_id"
-    else TARGET_DIR="$THEME_BASE/smart_folders/$cocoon_id"; fi
-
-    # Check if the folder exists (meaning we processed it or attempted to)
-    if [ -d "$TARGET_DIR" ]; then
-        ICON_TAG="❌"
-        LOGO_TAG="❌"
-        HERO_TAG="➖"
-        
-        # Swap to checkmark if the file is found
-        [ -f "$TARGET_DIR/icon.png" ] && ICON_TAG="✅"
-        [ -f "$TARGET_DIR/logo.png" ] && LOGO_TAG="✅"
-
-        # Capitalize system name for display
-        DISPLAY_NAME=$(echo "$cocoon_id" | awk '{print toupper(substr($0,1,1)) substr($0,2)}')
-        echo "| **$DISPLAY_NAME** | $ICON_TAG | $LOGO_TAG | $HERO_TAG |" >> "$TABLE_TMP"
-    fi
+# Use 'cp -u' to update only if the source is newer
+for wp in "$TECHDWEEB_DIR/_inc/images/system-view/"*.png; do
+    [[ -f "$wp" ]] && cp -u "$wp" "$THEME_BASE/wallpapers/$(basename "$wp")"
 done
 
-# Check if README exists
+echo "Updating README.md..."
 if [ -f "$README_FILE" ]; then
-    # If the "## Systems overview" header exists, delete it and everything below it
-    if grep -q "^## Systems overview" "$README_FILE"; then
-        sed -i '/^## Systems overview/,$d' "$README_FILE"
-    fi
-
-    # Append the new section and table to the end of the file
-    echo "## Systems overview" >> "$README_FILE"
-    echo "" >> "$README_FILE"
-    cat "$TABLE_TMP" >> "$README_FILE"
-    
+    sed -i '/^## Systems overview/,$d' "$README_FILE"
+    {
+        generate_table_section "$SYS_MAPPING" "smart_folders/by_platform" "Systems overview"
+        generate_table_section "$FLDR_MAPPING" "smart_folders" "Folders overview"
+    } >> "$README_FILE"
     echo "README.md successfully updated!"
-else
-    echo "Warning: $README_FILE not found. Skipping table injection."
 fi
-
-rm -f "$TABLE_TMP"
