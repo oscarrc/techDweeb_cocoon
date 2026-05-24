@@ -42,12 +42,23 @@ create_theme_json() {
     "toggle_thumb_gradient_start": "$(echo $data | jq -r .dark)",
     "toggle_thumb_gradient_end": "$(echo $data | jq -r .selector)",
     "accent_gradient_start": "$(echo $data | jq -r .primary)",
-    "accent_gradient_end": "$(echo $data | jq -r .primary)"
+    "accent_gradient_end": "$(echo $data | jq -r .primary)",
+    "divider": "$(echo $data | jq -r .selector)",
+    "success": "#27ae60",
+    "warning": "#f39c12",
+    "drop_shadow": "rgba(0,0,0,0.5)",
+    "inner_shadow_light": "rgba(255,255,255,0.05)",
+    "inner_shadow_dark": "rgba(0,0,0,0.5)",
+    "accent_glow": "rgba(0,0,0,0.3)"
   },
   "settings": {
     "icon_roundness": 0.2,
     "hero_display_style": "VIGNETTE",
-    "icon_scale": 0.9
+    "icon_scale": 0.9,
+    "hoverScale": 1,
+    "heroLogoScale": 0.6,
+    "heroFolderLogoScale": 0.6,
+    "heroGradientStyle": "NONE"
   }
 }
 EOF
