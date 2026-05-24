@@ -4,7 +4,7 @@ This repository contains a conversion script for **TechDweeb** ES-DE theme by [A
 
 ## Important Note
 
-This is **not** the official repository or related in any way with @TechDweeb or @anthonycaccese. This repository serves strictly as a **converter** utility to automate the creation and packaging of the various color variants for these themes.
+This is **not** the official repository or related in any way with [@TechDweeb](https://github.com/TechDweeb) or [@anthonycaccese](https://github.com/anthonycaccese/). This repository serves strictly as a **converter** utility to automate the creation and packaging of the various color variants for these themes.
 
 ## Credits
 
