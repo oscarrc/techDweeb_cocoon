@@ -1,26 +1,43 @@
-# TechDweeb Converter
+# TechDweeb Cocoon Theme
 
-This repository contains a conversion script for **TechDweeb** ES-DE theme by [Anthony Caccese](https://github.com/anthonycaccese/techdweeb-es-de) to Cocoon.
+[![Build Status](https://img.shields.io/github/actions/workflow/status/oscarrc/techDweeb_cocoon/release.yml?branch=main&label=Build)](https://github.com/oscarrc/techDweeb_cocoon/actions)
+[![Latest Release](https://img.shields.io/github/v/release/oscarrc/techDweeb_cocoon?label=Release)](https://github.com/oscarrc/techDweeb_cocoon/releases/latest)
+
+This repository provides an automated conversion utility to port the **TechDweeb** ES-DE theme by [Anthony Caccese](https://github.com/anthonycaccese/techdweeb-es-de) for use with [Cocoon](https://cocoon-shell.com/).
+
+## 🚀 Get Started
+You do not need to build the project yourself to use it. You can download the pre-built theme zip files in your desired color directly from the **[Latest Release](https://github.com/oscarrc/techDweeb_cocoon/releases/latest)** page and import them directly into Cocoon.
+
+---
+
+## 🛠️ Development & Building
+If you wish to modify the theme or contribute, use the provided scripts.
+
+### Requirements
+Ensure you have the following installed on your system:
+* `imagemagick` (for asset processing)
+* `jq` (for configuration parsing)
+* `p7zip-full` (for package compression)
+
+### Workflow
+1. Conversion Phase (Run locally to generate base assets):
+   ```
+   chmod +x ./convert.sh
+   ./convert.sh
+   ```
+
+2. Generation Phase (Packages the assets into distributable .zip files):
+   ```bash
+   chmod +x ./generate.sh
+   ./generate.sh
+   ```
+---
 
 ## Important Note
-
-This is **not** the official repository or related in any way with [@TechDweeb](https://github.com/TechDweeb) or [@anthonycaccese](https://github.com/anthonycaccese/). This repository serves strictly as a **converter** utility to automate the creation and packaging of the various color variants for these themes.
+This is not an official repository and is not affiliated with [@TechDweeb](https://github.com/TechDweeb) or [@anthonycaccese](https://github.com/anthonycaccese/). This repository serves strictly as a utility to automate the creation and packaging of color variants for the TechDweeb theme.
 
 ## Credits
-
 All credit for the original design, assets, and conceptual work goes to the original author of **TechDweeb**. This project aims to support and distribute their work more efficiently through automation.
-
-## Usage
-
-The `convert_techdweeb.sh` script automates the process of generating theme assets. It requires `imagemagick` and `p7zip-full` to be installed on your system.
-
-```bash
-chmod +x ./convert_techdweeb.sh
-./convert_techdweeb.sh [color]
-```
-
-
-
 
 ## Systems overview
 
