@@ -1,3 +1,6 @@
 [submodule "CocoonFE"]
 	path = CocoonFE
 	url = https://github.com/inssekt/CocoonFE
+[submodule "techdweeb-es-de"]
+	path = techdweeb-es-de
+	url = https://github.com/anthonycaccese/techdweeb-es-de.git
